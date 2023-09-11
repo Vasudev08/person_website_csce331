@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Full-Screen Left Section with Fixed Right</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Full-screen height */
+      }
+
+      .container {
+        display: flex;
+        flex: 1; /* Allow the container to grow and fill the available vertical space */
+      }
+
+      .left-scrollable {
+        flex: 2;
+        overflow-y: scroll; /* Add scroll for the left section */
+        padding: 20px;
+        background-color: #f2f2f2;
+        display: felx;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .left-scrollable img {
+        width: 400px;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .menu {
+        flex: 1;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-scrollable">
+        <img src="Vasu_Photo_2.jpg" alt="Vasu's Photo" />
+
+        <h1>About Me</h1>
+        <p>
+          Hi, I'm Vasudev Agarwal, currently a junior at Texas A&M University.
+          along with the coursework I have doing reserach. my hobbies are
+          reading books, running, trekking and swimming. A fun fact about me is
+          that I walked a marathon in austin in summer 2022. unforuntaley the
+          starva app glitched so I don't have anything to proof it.
+        </p>
+
+        <!-- Add more content here to see scrolling in action -->
+      </div>
+      <div class="menu" text-align: center;>
+        <!-- You can place your menu items here -->
+        <h2>Menu</h2>
+        <ul style="list-style: none">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tech.html">Technical</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="ai.html">AI-generated</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,34 +1,80 @@
 <!DOCTYPE html>
 <html>
-
-
-<head>
-    <a href="index.html">Landing Page</a>
-
-    <meta charset="UTF-8">
-    <title>PDF Display</title>
+  <head>
+    <title>Full-Screen Left Section with Fixed Right</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            min-height: 100vh;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh; /* Full-screen height */
+      }
 
-        /* Style for the container */
-        .pdf-container {
-            width: 80%; /* Adjust the width as needed */
-            max-width: 800px; /* Maximum width for the PDF */
-        }
+      .container {
+        display: flex;
+        flex: 1; /* Allow the container to grow and fill the available vertical space */
+      }
+
+      .left-scrollable {
+        flex: 2;
+        overflow-y: scroll; /* Add scroll for the left section */
+        padding: 20px;
+        background-color: #f2f2f2;
+        display: felx;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .left-scrollable img {
+        width: 400px;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .menu {
+        flex: 1;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .pdf-container {
+        width: 100%; /* Adjust the width as needed */
+        max-width: 800px; /* Maximum width for the PDF */
+        height: 100%;
+        max-height: 800px;
+      }
     </style>
-<head>
-    
-<body>
-    <div class="pdf-container">
-        <embed src="Agarwal_Vasudev_Resume.pdf" type="application/pdf" width="100%" height="600px" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-scrollable">
+        <div class="pdf-container">
+          <embed
+            src="Agarwal_Vasudev_Resume.pdf"
+            type="application/pdf"
+            width="100%"
+            height="600px"
+          />
+
+          <!-- Add more content here to see scrolling in action -->
+        </div>
+      </div>
+      <div class="menu">
+        <!-- You can place your menu items here -->
+        <h2>Menu</h2>
+        <ul style="list-style: none">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tech.html">Technical</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="ai.html">AI-generated</a></li>
+        </ul>
+      </div>
     </div>
-</body>
+  </body>
 </html>
