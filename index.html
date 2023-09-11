@@ -78,6 +78,16 @@
         margin-top: 20px;
       }
 
+      .hiking-photos img:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease;
+        z-index: 1;
+      }
+
+      .hiking-photos img:not(:hover) {
+        transform: scale(1);
+      }
+
       .hiking-photos img {
         width: 150px;
         height: 150px;
@@ -85,6 +95,35 @@
         object-fit: cover;
         border-radius: 50%;
       }
+
+
+
+      .book-photos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .book-photos img:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease;
+        z-index: 1;
+      }
+
+      .book-photos img:not(:hover) {
+        transform: scale(1);
+      }
+
+      .book-photos img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
     </style>
   </head>
   <body>
@@ -96,25 +135,45 @@
         <p>
           Hi, I'm Vasudev Agarwal, currently a junior at Texas A&M University.
           along with the coursework I'm also doing reserach at Urban
-          Resilience.AI lab besides college, I like reading books and here is
+          Resilience.AI lab besides college, I like reading books and some of my favorite ones are 1. Burn Math class - Jason Wikes 2.
+          Physics Lectures by Richard Feynman 3. The Patter on the stone - W.
+          Daniel Hillis and here is
           the link to list of books I read
           <a
             href="https://docs.google.com/spreadsheets/d/1L9t6f3YFJzCuzJG7H9-LkhOeP1wws0ws-yb7lI_C1Ww/edit?usp=sharing"
             >Book List</a
           >
+          
           my other hobbites are hiking, Swimming, Running and I'm a good at
           table tennis, badminton, scoocer, bikking and more. A fun fact about
           is that I walked a marathon in austin in summer 2022. unforuntaley the
-          starva app glitched so I don't have anything to proof it. Few favorite
-          books of mine that I recommed: 1. Burn Math class - Jason Wikes 2.
-          Physics Lectures by Richard Feynman 3. The Patter on the stone - W.
-          Daniel Hillis Here are some photos from my hiking trips:
+          starva app glitched so I don't have anything to proof it. Here are some photos from my hiking trips:
 
           <div class="hiking-photos">
-          <img src="vasu_trek_photo_1.jpg" alt="Vasu's Photo_1" />
-          <img src="vasu_trek_photo_2.jpg" alt="Vasu's Photo_2" />
-          <img src="vasu_trek_photo_3.jpg" alt="Vasu's Photo_3" />
-          <img src="vasu_trek_photo_4.jpg" alt="Vasu's Photo_4" />
+            <img src="vasu_trek_photo_1.jpg" alt="Vasu's Photo_1" />
+            <img src="vasu_trek_photo_2.jpg" alt="Vasu's Photo_2" />
+            <img src="vasu_trek_photo_3.jpg" alt="Vasu's Photo_3" />
+            <img src="vasu_trek_photo_4.jpg" alt="Vasu's Photo_4" />
+        </div>
+
+        <div class = "book-photos">
+          <a href="https://www.amazon.com/Burn-Math-Class-Reinvent-Mathematics/dp/0465053734" target="_blank">
+            <img src="burn_math_class_book_photo.jpg" alt="Vasu's Photo_1" />
+          </a>
+
+          <a href="https://www.amazon.com/Pattern-Stone-Computers-Science-Masters/dp/046502596X/ref=sr_1_2?crid=1WLBGS6I8LZND&keywords=pattern+on+the+stone&qid=1694470348&s=books&sprefix=pattern+on+the+ston%2Cstripbooks%2C182&sr=1-2" target="_blank">
+            <img src="pattern_on_the_stone_book_photo.jpg" alt="Vasu's Photo_2" />
+          </a>
+
+          <a href="https://www.amazon.com/Six-Easy-Pieces-Essentials-Explained/dp/0465025277/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694470218&sr=1-1" target="_blank">
+            <img src="six_easy_pieces_richard_book_photo.jpg" alt="Vasu's Photo_3" />
+          </a>
+
+          <a href="https://www.amazon.com/Money-Unauthorized-Biography-Coinage-Cryptocurrencies/dp/0345803558/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1694470466&sr=1-2" target="_blank">
+            <img src="money_unauthorised_biography_book_photo.jpg" alt="Vasu's Photo_4" />
+          </a>
+
+
         </div>
         </p>
 
