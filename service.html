@@ -19,7 +19,7 @@
 
       .left-scrollable {
         flex: 2;
-        overflow-y: scroll; /* Add scroll for the left section */
+        overflow-y: scroll;
         padding: 20px;
         background-color: #f2f2f2;
         display: felx;
@@ -36,27 +36,45 @@
       }
 
       .menu {
-        flex: 1;
+        flex: 0.5;
         background-color: #333;
         color: #fff;
-        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
         text-align: center;
+      }
+
+      .menu h2 {
+        color: #ff5733;
+      }
+
+      .menu ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .menu li {
+        margin: 10px 0;
+      }
+
+      .menu li:hover {
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Add a subtle text shadow on hover */
+      }
+
+      .menu a {
+        color: #00a6e2;
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="left-scrollable">
-        <img src="Vasu_Photo_2.jpg" alt="Vasu's Photo" />
-
-        <h1>About Me</h1>
-        <p>
-          Hi, I'm Vasudev Agarwal, currently a junior at Texas A&M University.
-          along with the coursework I have doing reserach. my hobbies are
-          reading books, running, trekking and swimming. A fun fact about me is
-          that I walked a marathon in austin in summer 2022. unforuntaley the
-          starva app glitched so I don't have anything to proof it.
-        </p>
+        <h1>This is service page</h1>
 
         <!-- Add more content here to see scrolling in action -->
       </div>
