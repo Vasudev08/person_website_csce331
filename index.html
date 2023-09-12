@@ -124,12 +124,40 @@
         border-radius: 50%;
       }
 
+      .personal-photos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .personal-photos img:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease;
+        z-index: 1;
+      }
+
+      .personal-photos img:not(:hover) {
+        transform: scale(1.4);
+      }
+
+      .personal-photos img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
     </style>
   </head>
   <body>
     <div class="container">
       <div class="left-scrollable">
+        <div class="personal-photos">
         <img src="Vasu_Photo_2.jpg" alt="Vasu's Photo" />
+        </div>
 
         <h1>About Me</h1>
         <p>
