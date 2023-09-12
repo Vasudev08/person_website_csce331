@@ -17,24 +17,6 @@
         flex: 1; /* Allow the container to grow and fill the available vertical space */
       }
 
-      .left-scrollable {
-        flex: 2;
-        overflow-y: scroll;
-        padding: 20px;
-        background-color: #f2f2f2;
-        display: felx;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-
-      .left-scrollable img {
-        width: 400px;
-        max-width: 100%;
-        margin-bottom: 20px;
-      }
-
       .menu {
         flex: 0.5;
         background-color: #333;
@@ -70,6 +52,24 @@
         text-decoration: none;
       }
 
+      .left-scrollable {
+        flex: 2;
+        overflow-y: scroll;
+        padding: 20px;
+        background-color: #f2f2f2;
+        display: felx;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .left-scrollable img {
+        width: 400px;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
       .project {
         margin: 20px 0;
         padding: 10px;
@@ -85,6 +85,20 @@
 
       .project-description {
         font-size: 14px;
+      }
+
+      .project-photos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .project-photos img:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease;
+        z-index: 1;
       }
 
       .project-photos img:not(:hover) {
@@ -119,8 +133,9 @@
             high-low recovery matrix.
 
             <div class="project-photos">
-              <a href="https://www.urbanresilience.ai/" target="_blank"></a>
-              <img src="research_photo.png" alt="Research Project" />
+              <a href="https://www.urbanresilience.ai/" target="_blank">
+                <img src="research_photo.png" alt="Research Project" />
+              </a>
             </div>
           </div>
         </div>
@@ -132,11 +147,9 @@
             University by developing a game using Pygame Python module which
             challenges students to reach destinations in earliest time.
             <div class="project-photos">
-              <a
-                href="https://github.com/Vasudev08/Howdy_Hack"
-                target="_blank"
-              ></a>
-              <img src="grand_theft_aggie_photo.png" alt="GTA" />
+              <a href="https://github.com/Vasudev08/Howdy_Hack" target="_blank">
+                <img src="grand_theft_aggie_photo.png" alt="GTA" />
+              </a>
             </div>
           </div>
         </div>
@@ -149,14 +162,15 @@
             sensors to reach autonomous navigation to win university rover
             challenge.
             <div class="project-photos">
-              <a href="https://www.karura.space/message" target="_blank"></a>
-              <img src="karura_rover.jpg" alt="GTA" />
+              <a href="https://www.karura.space/message" target="_blank">
+                <img src="karura_rover.jpg" alt="GTA" />
+              </a>
             </div>
           </div>
         </div>
       </div>
+
       <div class="menu" text-align: center;>
-        <!-- You can place your menu items here -->
         <h2>Menu</h2>
         <ul style="list-style: none">
           <li><a href="index.html">Home</a></li>

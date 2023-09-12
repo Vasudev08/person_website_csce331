@@ -69,17 +69,117 @@
         color: #00a6e2;
         text-decoration: none;
       }
+
+      .project {
+        margin: 20px 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .project-description {
+        font-size: 14px;
+      }
+
+      .project-photos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      .project-photos img:hover {
+        transform: scale(2);
+        transition: transform 0.3s ease;
+        z-index: 1;
+      }
+
+      .project-photos img:not(:hover) {
+        transform: scale(1);
+      }
+
+      .project-photos img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="left-scrollable">
         <h1>This is service page</h1>
+        <p>
+          Here, we are going to talk about my service projects and volunteer
+          work.
+        </p>
 
-        <!-- Add more content here to see scrolling in action -->
+        <div class="project">
+          <div class="project-title">Develop for Good</div>
+          <div class="project-description">
+            Develop for Good powers social good through students from all
+            colleges and backgrounds. The Bay Area nonprofit especially
+            prioritizes making its valuable, hands-on project experiences
+            accessible to underrepresented students in tech to accelerate their
+            careers. It strives to empower the next generation of diverse tech
+            leaders to learn by doing good, all while furthering the digital
+            transformation of the nonprofit sector. Applied to be a volunteer
+            where we will help develop project start Oct 29th, 2023.
+
+            <div class="project-photos">
+              <a href="https://www.developforgood.org/" target="_blank">
+                <img src="develop_for_good.png" alt="Develop for Good" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">The Big Event @ TAMU</div>
+          <div class="project-description">
+            Big Event is an annual, student-led communicty service event. It is
+            one of the largest one-day, student-run service project in United
+            States. Will be participating in Spring 2025
+
+            <div class="project-photos">
+              <a href="https://bigevent.tamu.edu/" target="_blank">
+                <img src="big_event.png" alt="Big Event" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-title">Engineers without borders @ TAMU</div>
+          <div class="project-description">
+            Engineers Without Borders embodies the idea of engineering for
+            social good, applying technical skills to address global challenges
+            and make a positive impact on the lives of people in less-developed
+            regions. Paricipated in weekly meeting with my friend during first
+            semseter.
+
+            <div class="project-photos">
+              <a href="https://www.ewb-usa.org/" target="_blank">
+                <img
+                  src="engineer_without_borders.png"
+                  alt="Engineering without borders"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="menu" text-align: center;>
-        <!-- You can place your menu items here -->
         <h2>Menu</h2>
         <ul style="list-style: none">
           <li><a href="index.html">Home</a></li>
