@@ -86,6 +86,18 @@
       .project-description {
         font-size: 14px;
       }
+
+      .project-photos img:not(:hover) {
+        transform: scale(1);
+      }
+
+      .project-photos img {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
     </style>
   </head>
   <body>
@@ -98,18 +110,49 @@
         </p>
 
         <div class="project">
-          <div class="project-title">Project 1</div>
-          <div class="project-description">Hello Project 1</div>
+          <div class="project-title">Research - Urban Resilience.AI</div>
+          <div class="project-description">
+            Developed a Python program utilizing Pandas, NumPy, Stats and
+            GeoPandas modules to analyze lifestyle recovery efforts after
+            Hurricane Harvey. Also created user-friendly visualizations showing
+            extreme areas of vulnerability including spatial graphs and a
+            high-low recovery matrix.
+
+            <div class="project-photos">
+              <a href="https://www.urbanresilience.ai/" target="_blank"></a>
+              <img src="research_photo.png" alt="Research Project" />
+            </div>
+          </div>
         </div>
 
         <div class="project">
-          <div class="project-title">Project 2</div>
-          <div class="project-description">Hello Project 1</div>
+          <div class="project-title">Grand Theft Aggie</div>
+          <div class="project-description">
+            Placed fourth place out of 40 teams in hackathon at Texas A&M
+            University by developing a game using Pygame Python module which
+            challenges students to reach destinations in earliest time.
+            <div class="project-photos">
+              <a
+                href="https://github.com/Vasudev08/Howdy_Hack"
+                target="_blank"
+              ></a>
+              <img src="grand_theft_aggie_photo.png" alt="GTA" />
+            </div>
+          </div>
         </div>
 
         <div class="project">
-          <div class="project-title">Project 3</div>
-          <div class="project-description">Hello Project 1</div>
+          <div class="project-title">Karura - University Rover Challenge</div>
+          <div class="project-description">
+            Developing rover software for autonomous navigation in a
+            multinational team by using ROS, Gazebo along with cameras and
+            sensors to reach autonomous navigation to win university rover
+            challenge.
+            <div class="project-photos">
+              <a href="https://www.karura.space/message" target="_blank"></a>
+              <img src="karura_rover.jpg" alt="GTA" />
+            </div>
+          </div>
         </div>
       </div>
       <div class="menu" text-align: center;>
@@ -117,6 +160,7 @@
         <h2>Menu</h2>
         <ul style="list-style: none">
           <li><a href="index.html">Home</a></li>
+          <li><a href="quali.html">Qualification</a></li>
           <li><a href="tech.html">Technical</a></li>
           <li><a href="service.html">Service</a></li>
           <li><a href="ai.html">AI-generated</a></li>
