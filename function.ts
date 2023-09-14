@@ -7,7 +7,7 @@ function toggleTheme() {
 
   // Toggle the theme by changing the href attribute of the link element
   if (islight) {
-    themeLink.href = "dark.css";
+    themeLink.href = "style.css";
   } else {
     themeLink.href = "light.css";
   }
