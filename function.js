@@ -2,7 +2,6 @@
 var islight = true;
 // Function to toggle the theme
 function toggleTheme() {
-  console.log("Hello");
   var themeLink = document.getElementById("theme-link");
   // Toggle the theme by changing the href attribute of the link element
   if (islight) {
@@ -16,3 +15,12 @@ function toggleTheme() {
 
 var themeToggleBtn = document.getElementById("theme-toggle");
 if (themeToggleBtn) themeToggleBtn.addEventListener("click", toggleTheme);
+
+window.addEventListener("load", function () {
+  var themeLink = document.getElementById("theme-link");
+  var islight = localStorage.getItem("theme") === "light";
+
+  if (!islight) {
+    themeLink.href = "light.css";
+  }
+});
