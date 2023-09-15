@@ -1,16 +1,24 @@
-// Define a boolean variable to track the current theme
-var islight = true;
 // Function to toggle the theme
 function toggleTheme() {
   var themeLink = document.getElementById("theme-link");
+
+  // Check the current theme preference in local storage
+  var currentTheme = localStorage.getItem("theme") || "light";
+
   // Toggle the theme by changing the href attribute of the link element
-  if (islight) {
+  if (currentTheme === "light") {
     themeLink.href = "style.css";
+    localStorage.setItem("theme", "dark"); // Set dark theme preference
   } else {
     themeLink.href = "light.css";
+    localStorage.setItem("theme", "light"); // Set light theme preference
   }
-  // Update the theme toggle state
-  islight = !islight;
+
+  // Notify all other pages about the theme change
+  var allPages = document.querySelectorAll('[data-theme="changeable"]');
+  allPages.forEach(function (page) {
+    page.contentWindow.postMessage({ theme: currentTheme }, "*");
+  });
 }
 
 var themeToggleBtn = document.getElementById("theme-toggle");
@@ -18,9 +26,13 @@ if (themeToggleBtn) themeToggleBtn.addEventListener("click", toggleTheme);
 
 window.addEventListener("load", function () {
   var themeLink = document.getElementById("theme-link");
-  var islight = localStorage.getItem("theme") === "light";
+  var body = document.body;
+  var currentTheme = localStorage.getItem("theme") || "light";
 
-  if (!islight) {
+  if (currentTheme === "light") {
     themeLink.href = "light.css";
+    body.classList.add("light-theme");
+  } else {
+    themeLink.href = "style.css";
   }
 });
