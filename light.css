@@ -74,6 +74,7 @@ body {
 }
 
 .hiking-photos,
+.project-photos,
 .book-photos,
 .personal-photos {
   display: flex;
@@ -83,6 +84,7 @@ body {
 }
 
 .hiking-photos img,
+.project-photos img,
 .book-photos img,
 .personal-photos img {
   max-width: 150px;
@@ -94,6 +96,7 @@ body {
 }
 
 .hiking-photos img:hover,
+.project-photos img:hover,
 .book-photos img:hover,
 .personal-photos img:hover {
   transform: rotate(15deg) scale(1.1); /* Unique rotation and scale on hover */
